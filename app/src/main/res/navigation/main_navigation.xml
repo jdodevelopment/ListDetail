@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/productsListFragment">
+
+    <fragment
+        android:id="@+id/productsListFragment"
+        android:name="ar.com.jdodevelopment.listdetail.ui.product.list.ProductsListFragment"
+        tools:layout="@layout/products_list_fragment">
+
+        <action
+            android:id="@+id/actionOpenDetail"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="ar.com.jdodevelopment.listdetail.ui.product.detail.ProductDetailFragment"
+        tools:layout="@layout/product_detail_fragment" >
+        <argument
+            android:name="product"
+            app:argType="ar.com.jdodevelopment.listdetail.data.model.Product" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ListDetail</string>
+
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="exit">Salir</string>
+    <string name="confirm_exit">¿Realmente desea salir?</string>
+    <string name="retry">Reintentar</string>
+
+</resources>
